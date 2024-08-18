@@ -67,6 +67,41 @@ const reverseString = (string)=>{
 console.log(reverseString('string'));
 
 
-end
+
+///////////// 2nd day /////////////////
+
+// 1. write a function that checks if a number is even or odd
+
+const checkEvenOdd = (num)=>{
+   if(num%2 === 0){
+    return "no. is Even"
+   }else{
+    return "no. is odd"
+   }
+}
+
+console.log(checkEvenOdd(20));
+
+
+// 2.write a function checks if a given year is a leap year
+
+const leapYear = (year)=>{
+  ((year%4 === 0) && (year%100 !== 0)) ? console.log('leap year') : console.log('not a leap year');
+  }
+
+  leapYear(2020)
+
+// 3 . write a function Sum of all elements in an array
+ let total = 0;
+const sum  =  (arr)=>{
+  for(let i =  arr.length-1; i>=0;i-- ){
+    total += arr[i]
+  }
+  return total
+}
+
+const array = [1,2,3,8]
+console.log(sum(array));
+
 
 
